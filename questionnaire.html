@@ -3,8 +3,322 @@
 <head>
     <meta charset="UTF-8">
     <title>Завдання №5</title>
+    <link rel="stylesheet" href="questionnaire.css">
 </head>
 <body>
+    <div class="form">
+        <div class="top">
+            <div class="content">
+                <h1>Исследование использования мультимедиа</h1>
+                <div class="low-info">
+                    <p>Доброго дня, витратьте,</p>
+                    <p>будь ласка, кілька хвилин свого часу на заповнення наступної анкети.</p>
+                </div>
+            </div>
+        </div>
+        <div class="middle">
+            <form class="real-form" method="post">
+                <div class="holder">
+                    <div class="questions">
+                        <div class="group">
+                            <section class="question choice multiply">
+                                <div class="sizer">
+                                    <h2>1. Ім'я</h2>
+                                    <div class="answers">
+                                        <div class="list">
+                                            <ul>
+                                                <li class="flaticon-check">
+                                                    <div class="input-name">
+                                                        <input class="input-text" type = "text"  name = "firstname">
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="group">
+                            <section class="question choice multiply">
+                                <div class="sizer">
+                                    <h2>2. Фамілія</h2>
+                                    <div class="answers">
+                                        <div class="list">
+                                            <ul>
+                                                <li class="flaticon-check">
+                                                    <div class="input-name">
+                                                        <input class="input-text" type = "text"  name = "lastname">
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="group">
+                            <section class="question choice multiply">
+                                <div class="sizer">
+                                    <h2>3. Електронна пошта</h2>
+                                    <div class="answers">
+                                        <div class="list">
+                                            <ul>
+                                                <li class="flaticon-check">
+                                                    <div class="input-name">
+                                                        <input class="input-text" type="email" autocomplete="off">
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="group">
+                            <section class="question choice multiply">
+                                <div class="sizer">
+                                    <h2>4. Номер телефону</h2>
+                                    <div class="answers">
+                                        <div class="list">
+                                            <ul>
+                                                <li class="flaticon-check">
+                                                    <div class="input-name">
+                                                        <input class="input-text" type="tel">
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="group">
+                            <section class="question choice multiply">
+                                <div class="sizer">
+                                    <h2>5. Сайт</h2>
+                                    <div class="answers">
+                                        <div class="list">
+                                            <ul>
+                                                <li class="flaticon-check">
+                                                    <div class="input-name">
+                                                        <input class="input-text" type="url">
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="group">
+                            <section class="question choice multiply">
+                                <div class="sizer">
+                                    <h2>6. Олюблений колір</h2>
+                                    <div class="answers">
+                                        <div class="list">
+                                            <div class="input-name">
+                                                <input id="fav-color" type="color">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="group">
+                            <section class="question choice multiply">
+                                <div class="sizer">
+                                    <h2>7. Дата народження</h2>
+                                    <div class="answers">
+                                        <div class="list">
+                                            <ul>
+                                                <li class="flaticon-check">
+                                                    <div class="input-name">
+                                                        <input class="input-text" type="date">
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="group">
+                            <section class="question choice multiply">
+                                <div class="sizer">
+                                    <h2>8. Теперішній тиждень</h2>
+                                    <div class="answers">
+                                        <div class="list">
+                                            <ul>
+                                                <li class="flaticon-check">
+                                                    <div class="input-name">
+                                                        <input class="input-text" type="week">
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="group">
+                            <section class="question choice multiply">
+                                <div class="sizer">
+                                    <h2>10. Місяць</h2>
+                                    <div class="answers">
+                                        <div class="list">
+                                            <ul>
+                                                <li class="flaticon-check">
+                                                    <div class="input-name">
+                                                        <input class="input-text" type="month">
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="group">
+                            <section class="question choice multiply">
+                                <div class="sizer">
+                                    <h2>11. Час</h2>
+                                    <div class="answers">
+                                        <div class="list">
+                                            <ul>
+                                                <li class="flaticon-check">
+                                                    <div class="input-name">
+                                                        <input class="input-text" type="time">
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="group">
+                            <section class="question choice multiply">
+                                <div class="sizer">
+                                    <h2>12. Дата та час</h2>
+                                    <div class="answers">
+                                        <div class="list">
+                                            <ul>
+                                                <li class="flaticon-check">
+                                                    <div class="input-name">
+                                                        <input class="input-text" type="datetime-local">
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="group">
+                            <section class="question choice multiply">
+                                <div class="sizer">
+                                    <h2>12. Вік</h2>
+                                    <div class="answers">
+                                        <div class="list">
+                                            <ul>
+                                                <li class="flaticon-check">
+                                                    <div class="input-name">
+                                                        <input class="input-text" type="number">
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="group">
+                            <section class="question choice multiply">
+                                <div class="sizer">
+                                    <h2>12. Вік</h2>
+                                    <div class="answers">
+                                        <div class="list">
 
+                                                    <div class="input-name">
+                                                        <input id="range-bar" type="range">
+                                                    </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="group">
+                            <section class="question choice multiply">
+                                <div class="sizer">
+                                    <h2>12. Вік</h2>
+                                    <div class="answers">
+                                        <div class="list">
+                                            <div class="input-name">
+                                                <progress id="progress-bar" value="90"> <span></span></progress>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="group">
+                            <section class="question choice multiply">
+                                <div class="sizer">
+                                    <h2>1. Які види спорту вам подобаються?</h2>
+                                    <div class="answers">
+                                        <div class="list">
+                                            <ul>
+                                                <input class="cb" id="football" type="checkbox">
+                                                <li class="flaticon-check">
+                                                    <label for="football">Футбол</label>
+                                                </li>
+                                                <input class="cb" id="basketball" type="checkbox">
+                                                <li class="flaticon-check">
+                                                    <label for="basketball">Баскетбол</label>
+                                                </li>
+                                                <input class="cb" id="volleyball" type="checkbox">
+                                                <li class="flaticon-check">
+                                                    <label for="volleyball">Волейбол</label>
+                                                </li>
+                                                <input class="cb" id="cb4" type="checkbox">
+                                                <li class="flaticon-check">
+                                                    <label for="cb4">Теніс</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="group">
+                            <section class="question choice single">
+                                <div class="sizer">
+                                    <h2>1. Ваша стать?</h2>
+                                    <div class="answers">
+                                        <div class="list">
+                                            <ul>
+                                                <input class="cb" id="man" name="sex" type="radio" value="male">
+                                                <li class="flaticon-check">
+                                                    <label for="man">Чоловік</label>
+                                                </li>
+                                                <input class="cb" id="woman" name="sex" type="radio" value="female">
+                                                <li class="flaticon-check">
+                                                    <label for="woman">Жінка</label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="bottom">
+
+        </div>
+    </div>
 </body>
 </html>
