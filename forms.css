@@ -8,7 +8,7 @@
     font-size: 18px;
 }
 .content-form-1{
-    width: 450px;
+    width: 400px;
     margin: auto;
     min-height: 100px;
     border: 3px #8E8E8E solid;
@@ -19,7 +19,7 @@
     border-bottom: 5px solid #8E8E8E;
 }
 .big-border{
-    height: 45px;
+    height: 40px;
     background-color: rgba(0, 0, 0, 0.8);
     display: inline-block;
     width: 100%;
@@ -34,7 +34,6 @@
     )
     20;
 }
-
 .top-content-form-1{
     padding-top: 40px;
     border-bottom: 3px #8E8E8E solid;
@@ -51,6 +50,18 @@
     background-color: #E4E3DF;
     border: 2px solid #8E8E8E;
     border-radius: 4px;
+}
+#firstname-form-1:valid{
+    background-color: #cbd9bc;
+}
+#firstname-form-1:hover:valid{
+    background-color: #b7d09d;
+}
+#firstname-form-1:invalid{
+    background-color: #d9bcbc;
+}
+#firstname-form-1:hover:invalid{
+    background-color: #d2aeae;
 }
 .middle-content-form-1{
     height: 300px;
@@ -77,6 +88,18 @@
     -moz-appearance: none;
     line-break: strict;
 }
+.address-form-1:invalid{
+    background-color: #d9bcbc;
+}
+.address-form-1:hover:invalid{
+    background-color: #d2aeae;
+}
+.address-form-1:valid{
+    background-color: #cbd9bc;
+}
+.address-form-1:hover:valid{
+    background-color: #b7d09d;
+}
 .bottom-content-form-1{
     height: 159px;
     width: 100%;
@@ -98,7 +121,7 @@
 
 .input-elements-form-1{
     vertical-align: top;
-    width: 395px;
+    width: 86.2%;
     height: 50px;
     box-sizing: border-box;
     margin: 0;
@@ -112,7 +135,283 @@
     background-color: #d7d6d1;
 
 }
-#submit-form-1{
+.input-elements-form-1:valid{
+    background-color: #cbd9bc;
+}
+.input-elements-form-1:hover:valid{
+    background-color: #b7d09d;
+}
+.input-elements-form-1:invalid{
+    background-color: #d9bcbc;
+}
+.input-elements-form-1:hover:invalid{
+    background-color: #d2aeae;
+}
+#submit-form-1 {
     text-align: center;
     padding-right: 40px;
+    background-color: #E4E3DF;
+}
+#submit-form-1:hover {
+    background-color: #d7d6d1;
+}
+.form-2{
+    width: 470px;
+    min-height: 300px;
+    background-color: #f5e9d9;
+    font-family: 'Inter Regular', sans-serif;
+    font-size: 18px;
+}
+.content-form-2{
+    min-height: 100px;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 16px;
+}
+.body-form-2{
+    height: 100%;
+    min-height: 100px;
+    background-color: #fffdee;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 16px solid green;
+    border-image: repeating-linear-gradient(
+            -45deg,
+            #fbcfdf,
+            #fbcfdf 15px,
+            #fffdee 15px,
+            #fffdee 30px,
+            #c42061 30px,
+            #c42061 45px,
+            #fffdee 45px,
+            #fffdee 60px
+    )
+    20;
+}
+.question-form-2{
+    border: none;
+    padding-bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.question-name-form-2{
+    padding-top: 30px;
+    color: dimgray;
+    font-size: 15px;
+}
+.input-form-2{
+    height: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ded2c1;
+    font-size: 15px;
+}
+.input-form-2:invalid{
+    background-color: #f3dbe1;
+}
+.input-form-2:invalid:hover{
+    background-color: #e3bbc6;
+}
+.input-form-2:valid{
+    background-color: #d1e5e8;
+}
+.input-form-2:valid:hover{
+    background-color: #bee1dc;
+}
+#textarea-form-2{
+    height: 200px;
+    resize: none;
+}
+.submit-frame-form-2{
+    padding: 20px;
+}
+#submit-form-2{
+    width: 85%;
+    height: 40px;
+    background-color: #f67ca5;
+    color: white;
+    border: none;
+    margin-bottom: 25px;
+    font-variant: all-petite-caps;
+    font-size: 18px;
+    font-weight: bold;
+}
+#submit-form-2:hover{
+    background-color: #c42061;
+}
+#submit-form-2:active{
+    background-color: #a90747;
+}
+.form-3{
+    background-image: url("https://uzhgorod.net.ua/images/news/2020/4/max/413976_1.jpg");
+    width: 400px;
+    color: white;
+    font-family: roboto, sans-serif;
+}
+.overlie{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(29, 5, 33, 0.55);
+}
+.content-form-3{
+    padding: 50px 50px 60px 50px;
+}
+.log-out-form-3{
+    width: 100%;
+}
+.title-form-3{
+    font-variant: all-petite-caps;
+    font-size: 28px;
+}
+.title-style-form-3{
+    font-weight: normal;
+    margin: 0 0 15px 0;
+}
+.title-style-form-3 span{
+    border-bottom: 3px solid #1762ee;
+}
+.input-elements-form-3{
+    margin: 0;
+    padding: 0;
+    border: none;
+
+}
+.input-name-form-3{
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-variant: all-petite-caps;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.input-form-3, #submit-form-3{
+    width: 100%;
+    box-sizing: border-box;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    font-size: 15px;
+}
+.input-form-3{
+    outline: none;
+    -moz-appearance: none;
+}
+.input-form-3:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.input-form-3:focus{
+    background-color: #e8f0fe;
+    color: black;
+    border: 1px white solid;
+}
+.input-form-3:invalid{
+    background-color: rgba(252, 106, 106, 0.5);
+    color: white;
+}
+.input-form-3:invalid:hover{
+    background-color: rgba(252, 106, 106, 0.4);
+    color: white;
+}
+.input-form-3:invalid:focus{
+    background-color: rgb(255, 123, 123);
+    color: black;
+}
+#checkbox-form-3{
+    /* Double-sized Checkboxes */
+    -ms-transform: scale(1.5); /* IE */
+    -moz-transform: scale(1.5); /* FF */
+    -webkit-transform: scale(1.5); /* Safari and Chrome */
+    -o-transform: scale(1.5); /* Opera */
+    transform: scale(1.5);
+    padding: 10px;
+}
+#checkbox-form-3 +label{
+    margin-left: 10px;
+}
+#submit-form-3{
+    margin-top: 15px;
+    background-color: #1762ee;
+    color: white;
+}
+.form-4{
+    width: 300px;
+    background-color: #fff2e3;
+    text-align: center;
+    padding-top: 40px;
+}
+.content-form-4{
+    margin: 0 20px 0 20px;
+    background-color: #fff8f3;
+    box-shadow: 0 0 10px rgba(79, 64, 24, 0.3);
+}
+.top-content-form-4{
+}
+.flower-img-form-4{
+    height: 100px;
+    margin-top: -35px;
+}
+.title-form-3{
+    font-weight: 300;
+    font-size: 24px;
+    border-bottom: #d3d2d2 double 4px;
+}
+.question-form-4{
+    border: none;
+}
+.input-name-form-4{
+    padding-top: 20px;
+    color: #898989;
+    font-family: comic sans ms, roboto, sans-serif;
+    margin-bottom: 10px;
+}
+.input-form-4{
+    height: 30px;
+    box-sizing: border-box;
+    border: 1px solid #d3d2d2;
+}
+.input-form-4:hover{
+    background-color: #f6f1ee;
+}
+.input-form-4:invalid{
+    background-color: #ffe1df;
+}
+.input-form-4:invalid:hover{
+    background-color: #fcdddc;
+}
+#firstname-form-4{
+    width: 90%;
+    margin: auto;
+}
+#select1-form-4{
+    width: 20%;
+    margin: auto;
+}
+#select2-form-4{
+    width: 50%;
+    margin: auto;
+}
+#submit-form-4{
+    width: 90%;
+    margin: auto;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    font-variant: all-petite-caps;
+    font-size: 18px;
+}
+#submit-form-4:hover{
+    background-color: #e55757;
+}
+#submit-form-4:active{
+    background-color: #e55757;
 }
