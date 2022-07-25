@@ -1,0 +1,118 @@
+.form-1{
+    width: 510px;
+    min-height: 300px;
+    background-color: #E4E3DF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Inter Regular', sans-serif;
+    font-size: 18px;
+}
+.content-form-1{
+    width: 450px;
+    margin: auto;
+    min-height: 100px;
+    border: 3px #8E8E8E solid;
+    border-bottom: none;
+}
+.top-border-form-1{
+    height: 45px;
+    border-bottom: 5px solid #8E8E8E;
+}
+.big-border{
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 50px solid green;
+    border-image: repeating-linear-gradient(
+            -25deg,
+            #8E8E8E,
+            #8E8E8E 3px,
+            #E4E3DF 3px,
+            #E4E3DF 8px
+    )
+    20;
+}
+
+.top-content-form-1{
+    padding-top: 40px;
+    border-bottom: 3px #8E8E8E solid;
+    border-top: 3px #8E8E8E solid;
+}
+.input-name-form-1{
+    border: none;
+}
+#firstname-form-1{
+    width: 100%;
+    box-sizing: border-box;
+    height: 35px;
+    font-size: 18px;
+    background-color: #E4E3DF;
+    border: 2px solid #8E8E8E;
+    border-radius: 4px;
+}
+.middle-content-form-1{
+    height: 300px;
+    border: none;
+    border-bottom: 3px #8E8E8E solid;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    font-size: 18px;
+}
+.middle-content-form-1 legend{
+    padding-top: 20px;
+}
+.address-form-1{
+    height: 80%;
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+    background-color: #E4E3DF;
+    font-size: 20px;
+    border: 2px solid #8E8E8E;
+    border-radius: 4px;
+    outline: none;
+    -moz-appearance: none;
+    line-break: strict;
+}
+.bottom-content-form-1{
+    height: 159px;
+    width: 100%;
+}
+.bottom-elements-form-1{
+    height: 50px;
+    border-bottom: 3px #8E8E8E solid;
+    width: 100%;
+
+}
+.bottom-icons-form-1{
+    height: 48px;
+    width: 50px;
+    background-color: #8E8E8E;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.input-elements-form-1{
+    vertical-align: top;
+    width: 395px;
+    height: 50px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px;
+    display: inline-block;
+    border: none;
+    background-color: #E4E3DF;
+    font-size: 18px;
+}
+.input-elements-form-1:hover{
+    background-color: #d7d6d1;
+
+}
+#submit-form-1{
+    text-align: center;
+    padding-right: 40px;
+}
