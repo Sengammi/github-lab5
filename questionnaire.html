@@ -6,362 +6,405 @@
     <link rel="stylesheet" href="questionnaire.css">
 </head>
 <body>
-    <div class="form">
-        <div class="top">
-            <div class="content">
-                <h1>Исследование использования мультимедиа</h1>
-                <div class="low-info">
-                    <p>Доброго дня, витратьте,</p>
-                    <p>будь ласка, кілька хвилин свого часу на заповнення наступної анкети.</p>
-                </div>
+<div class="form">
+    <div class="top">
+        <div class="content">
+            <h1>Дослідження використання мультимедіа</h1>
+            <div class="low-info">
+                <p>Доброго дня, витратьте,</p>
+                <p>будь ласка, кілька хвилин свого часу на заповнення наступної анкети.</p>
             </div>
         </div>
-        <div class="middle">
-            <form class="real-form" method="post">
-                <div class="holder">
-                    <div class="questions">
-                        <div class="group">
-                            <section class="question input">
-                                <div class="sizer">
-                                    <h2>1. Ім'я *</h2>
-                                    <div class="answers">
-                                        <div class="list">
-                                            <ul>
-                                                <li class="flaticon-check">
-                                                    <div class="input-name">
-                                                        <input class="input-text" type = "text" placeholder="Введіть ім'я"  name = "firstname" required
-                                                               minlength="1"
-                                                               maxlength="32"
-                                                               pattern="[А-Яа-я]{1,32}|[A-Za-z]{1,32}">
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
+    </div>
+    <div class="middle">
+        <form class="real-form" method="post">
+            <div class="questions">
+                <fieldset class="group">
+                    <legend>1. Ім'я <span>*</span></legend>
+                    <div class="answers">
+                        <div class="list">
+                            <ul>
+                                <li class="flaticon-check">
+                                    <div class="input-name">
+                                        <input class="input-text" type="text" placeholder="Введіть ім'я"
+                                               name="firstname" id="firstname" required
+                                               minlength="1"
+                                               maxlength="32"
+                                               pattern="[А-Яа-яґҐЁёІіЇїЄє'’ʼ\s-]{1,32}|[A-Za-z]{1,32}">
                                     </div>
-                                </div>
-                            </section>
+                                </li>
+                            </ul>
+                            <label class="hidden-label" for="firstname">Приклад: Andrey, Павло...</label>
                         </div>
-                        <div class="group">
-                            <section class="question input">
-                                <div class="sizer">
-                                    <h2>2. Прізвище *</h2>
-                                    <div class="answers">
-                                        <div class="list">
-                                            <ul>
-                                                <li class="flaticon-check">
-                                                    <div class="input-name">
-                                                        <input class="input-text" type = "text" placeholder="Введіть прізвище"  name = "lastname" required
-                                                               minlength="1"
-                                                               maxlength="32"
-                                                               pattern="[А-Яа-я]{1,32}|[A-Za-z]{1,32}">
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="group">
+                    <legend>2. Прізвище <span>*</span></legend>
+                    <div class="answers">
+                        <div class="list">
+                            <ul>
+                                <li class="flaticon-check">
+                                    <div class="input-name">
+                                        <input class="input-text" type="text" placeholder="Введіть прізвище"
+                                               name="lastname" id="lastname" required
+                                               minlength="1"
+                                               maxlength="32"
+                                               pattern="([А-Яа-яґҐЁёІіЇїЄє'’ʼ\s-]{1,32})|([A-Za-z]{1,32})">
                                     </div>
-                                </div>
-                            </section>
+                                </li>
+                            </ul>
+                            <label class="hidden-label" for="lastname">Приклад: Kennedy, Мельник...</label>
                         </div>
-                        <div class="group">
-                            <section class="question input">
-                                <div class="sizer">
-                                    <h2>3. Електронна пошта *</h2>
-                                    <div class="answers">
-                                        <div class="list">
-                                            <ul>
-                                                <li class="flaticon-check">
-                                                    <div class="input-name">
-                                                        <input class="input-text" type="email" placeholder="Введіть ел. пошту" autocomplete="off" required
-                                                               pattern="[A-Za-z]{1,32}@[A-Za-z]{1,32}\.[A-Za-z]{1,32}">
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="group">
+                    <legend>3. Стать <span>*</span></legend>
+                    <div class="answers">
+                        <div class="list">
+                            <ul>
+                                <input class="cb" id="man" name="sex" type="radio" value="male" required>
+                                <li class="flaticon-check">
+                                    <label for="man">Чоловік</label>
+                                </li>
+                                <input class="cb" id="woman" name="sex" type="radio" value="female">
+                                <li class="flaticon-check">
+                                    <label for="woman">Жінка</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="group">
+                    <legend>4. Електронна пошта <span>*</span></legend>
+                    <div class="answers">
+                        <div class="list">
+                            <ul>
+                                <li class="flaticon-check">
+                                    <div class="input-name">
+                                        <input class="input-text" name="email" type="email"
+                                               placeholder="Введіть ел. пошту"
+                                               autocomplete="off" required id="email"
+                                               pattern="[A-Za-z]{1,32}@[A-Za-z]{1,32}\.[A-Za-z]{1,32}">
                                     </div>
-                                </div>
-                            </section>
+                                </li>
+                            </ul>
+                            <label class="hidden-label" for="email">Приклад: example@gmail.com,
+                                someone@example.com</label>
                         </div>
-                        <div class="group">
-                            <section class="question input">
-                                <div class="sizer">
-                                    <h2>4. Номер телефону *</h2>
-                                    <div class="answers">
-                                        <div class="list">
-                                            <ul>
-                                                <li class="flaticon-check">
-                                                    <div class="input-name">
-                                                        <input class="input-text" name="tel" placeholder="Введіть номер телефону" type="tel" required
-                                                               maxlength="13"
-                                                               minlength="10"
-                                                               pattern="(+380)?[0-9]{9}">
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="group">
+                    <legend>5. Номер телефону <span>*</span></legend>
+                    <div class="answers">
+                        <div class="list">
+                            <ul>
+                                <li class="flaticon-check">
+                                    <div class="input-name">
+                                        <input class="input-text" name="tel" placeholder="Введіть номер телефону"
+                                               type="tel" required id="tel"
+                                               maxlength="13"
+                                               minlength="10"
+                                               pattern="(\+38)?0[0-9]{9}">
                                     </div>
-                                </div>
-                            </section>
+                                </li>
+                            </ul>
+                            <label class="hidden-label" for="tel">Приклад: +380982345678, або 0982345678</label>
                         </div>
-                        <div class="group">
-                            <section class="question input">
-                                <div class="sizer">
-                                    <h2>5. Вік *</h2>
-                                    <div class="answers">
-                                        <div class="list">
-                                            <ul>
-                                                <li class="flaticon-check">
-                                                    <div class="input-name">
-                                                        <input class="input-text" min="18" placeholder="Введіть свій вік" type="number" required>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="group">
+                    <legend>6. Вік <span>*</span></legend>
+                    <div class="answers">
+                        <div class="list">
+                            <ul>
+                                <li class="flaticon-check">
+                                    <div class="input-name">
+                                        <input class="input-text" min="18" placeholder="Введіть свій вік" type="number"
+                                               required id="age"
+                                               title="Вам повинно бути більше 18 років.">
                                     </div>
-                                </div>
-                            </section>
+                                </li>
+                            </ul>
+                            <label class="hidden-label" for="tel">Вам повинно бути більше 18 років</label>
                         </div>
-                        <div class="group">
-                            <section class="question choice multiply">
-                                <div class="sizer">
-                                    <h2>6. Види спорту, які вам подобаються</h2>
-                                    <div class="answers">
-                                        <div class="list">
-                                            <ul>
-                                                <input class="cb" id="football" type="checkbox">
-                                                <li class="flaticon-check">
-                                                    <label for="football">Футбол</label>
-                                                </li>
-                                                <input class="cb" id="basketball" type="checkbox">
-                                                <li class="flaticon-check">
-                                                    <label for="basketball">Баскетбол</label>
-                                                </li>
-                                                <input class="cb" id="volleyball" type="checkbox">
-                                                <li class="flaticon-check">
-                                                    <label for="volleyball">Волейбол</label>
-                                                </li>
-                                                <input class="cb" id="cb4" type="checkbox">
-                                                <li class="flaticon-check">
-                                                    <label for="cb4">Теніс</label>
-                                                </li>
-                                            </ul>
-                                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="group">
+                    <legend>7. Дата народження <span>*</span></legend>
+                    <div class="answers">
+                        <div class="list">
+                            <ul>
+                                <li class="flaticon-check">
+                                    <div class="input-name">
+                                        <input class="input-text" type="date" id="birthday" required>
                                     </div>
-                                </div>
-                            </section>
+                                </li>
+                            </ul>
+                            <label class="hidden-label" for="birthday">Приклад: 13.04.1980</label>
                         </div>
-                        <div class="group">
-                            <section class="question choice single">
-                                <div class="sizer">
-                                    <h2>7. Стать</h2>
-                                    <div class="answers">
-                                        <div class="list">
-                                            <ul>
-                                                <input class="cb" id="man" name="sex" type="radio" value="male">
-                                                <li class="flaticon-check">
-                                                    <label for="man">Чоловік</label>
-                                                </li>
-                                                <input class="cb" id="woman" name="sex" type="radio" value="female">
-                                                <li class="flaticon-check">
-                                                    <label for="woman">Жінка</label>
-                                                </li>
-                                            </ul>
-                                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="group">
+                    <legend>8. Придумайте пароль <span>*</span></legend>
+                    <div class="answers">
+                        <div class="list">
+                            <ul>
+                                <li class="flaticon-check">
+                                    <div class="input-name">
+                                        <input class="input-text" type="password" required
+                                               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                                               placeholder="Введіть пароль" id="password"
+                                               title="− складається з 6 символів;
+− містить хоча б одну велику літеру;
+− містить хоча б одну малу літеру;
+− містить хоча б одну цифру;">
                                     </div>
-                                </div>
-                            </section>
+                                </li>
+                            </ul>
+                            <label class="hidden-label" for="password">Пароль повинен:<br>- складається не менше ніж з 6
+                                символів;<br>- містить хоча б одну велику літеру;<br>- містить хоча б одну малу
+                                літеру;<br>- містить хоча б одну цифру.</label>
                         </div>
-                        <div class="group">
-                            <section class="question input">
-                                <div class="sizer">
-                                    <h2>8. Сайт</h2>
-                                    <div class="answers">
-                                        <div class="list">
-                                            <ul>
-                                                <li class="flaticon-check">
-                                                    <div class="input-name">
-                                                        <input class="input-text" placeholder="Введіть адресу сайту (якщо є)" type="url"
-                                                               minlength="1"
-                                                               pattern="https://|http://[A-Za-z]{1,32}\.[A-Za-z]{1,10}">
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="group">
+                    <legend>7. Про себе</legend>
+                    <div class="answers">
+                        <div class="list">
+                            <ul>
+                                <li class="flaticon-check">
+                                    <div class="input-name">
+                                            <textarea id="about-you" spellcheck="false" maxlength="2500"
+                                                      placeholder="Введіть інформацію про себе"
+                                                      title="Максимум 2500 символів."></textarea>
                                     </div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="group">
-                            <section class="question input">
-                                <div class="sizer">
-                                    <h2>9. Олюблений колір</h2>
-                                    <div class="answers">
-                                        <div class="list">
-                                            <div class="input-name">
-                                                <input id="fav-color" type="color">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="group">
-                            <section class="question input">
-                                <div class="sizer">
-                                    <h2>10. Дата народження *</h2>
-                                    <div class="answers">
-                                        <div class="list">
-                                            <ul>
-                                                <li class="flaticon-check">
-                                                    <div class="input-name">
-                                                        <input class="input-text" type="date" required>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="group">
-                            <section class="question input">
-                                <div class="sizer">
-                                    <h2>11. Теперішній тиждень</h2>
-                                    <div class="answers">
-                                        <div class="list">
-                                            <ul>
-                                                <li class="flaticon-check">
-                                                    <div class="input-name">
-                                                        <input class="input-text" type="week">
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="group">
-                            <section class="question input">
-                                <div class="sizer">
-                                    <h2>12. Місяць</h2>
-                                    <div class="answers">
-                                        <div class="list">
-                                            <ul>
-                                                <li class="flaticon-check">
-                                                    <div class="input-name">
-                                                        <input class="input-text" type="month">
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="group">
-                            <section class="question input">
-                                <div class="sizer">
-                                    <h2>13. Час</h2>
-                                    <div class="answers">
-                                        <div class="list">
-                                            <ul>
-                                                <li class="flaticon-check">
-                                                    <div class="input-name">
-                                                        <input class="input-text" type="time">
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="group">
-                            <section class="question input">
-                                <div class="sizer">
-                                    <h2>14. Дата та час</h2>
-                                    <div class="answers">
-                                        <div class="list">
-                                            <ul>
-                                                <li class="flaticon-check">
-                                                    <div class="input-name">
-                                                        <input class="input-text" type="datetime-local">
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                        <div class="group">
-                            <section class="question range">
-                                <div class="sizer">
-                                    <h2>15. Ваша фізична підготовка</h2>
-                                    <div class="answers">
-                                        <div class="list">
-                                            <div class="input-name">
-                                                <input id="range-bar" type="range" value="10" max="100">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
+                                </li>
+                            </ul>
+                            <label class="hidden-label" for="about-you">Розкажіть про себе у рамках 2500
+                                символів</label>
 
-                        <div class="group">
-                            <section class="question input">
-                                <div class="sizer">
-                                    <h2>Демонстрація функції пошук</h2>
-                                    <div class="answers">
-                                        <div class="list">
-                                            <ul>
-                                                <li class="flaticon-check">
-                                                    <div class="input-name">
-                                                        <input class="input-text" type="search" id="site-search" name="q">
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
                         </div>
-                        <div class="group">
-                            <section class="question meter">
-                                <div class="sizer">
-                                    <h2>Демонстрація метера</h2>
-                                    <div class="answers">
-                                        <div class="list">
-                                            <div class="input-name">
-                                                <meter id="meter-bar" min="0" low="50" max="100" value="60" ></meter>
-                                            </div>
-                                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="group">
+                    <legend>8. Найкраще знаєтн</legend>
+                    <div class="answers">
+                        <div class="list">
+                            <ul>
+                                <li class="flaticon-check">
+                                    <div class="input-name">
+                                        <input class="input-text" placeholder="Яку мову ви знаєте найкраще?"
+                                               list="language">
+                                        <datalist id="language">
+                                            <option value="HTML/CSS">
+                                            <option value="JS">
+                                            <option value="Python">
+                                            <option value="C++">
+                                            <option value="C#">
+                                        </datalist>
                                     </div>
-                                </div>
-                            </section>
+                                </li>
+                            </ul>
+                            <label class="hidden-label" for="language">Виберіть із списка мову, якою ви найкраще
+                                володієте</label>
+
                         </div>
-                        <div class="group">
-                            <section class="question progressbar">
-                                <div class="sizer">
-                                    <h2>Демонстрація прогрес-бара</h2>
-                                    <div class="answers">
-                                        <div class="list">
-                                            <div class="input-name">
-                                                <progress id="progress-bar" value="20" max="100"></progress>
-                                            </div>
-                                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="group">
+                    <legend>8. Види спорту, які вам подобаються</legend>
+                    <div class="answers">
+                        <div class="list">
+                            <ul>
+                                <input class="cb" id="football" type="checkbox">
+                                <li class="flaticon-check">
+                                    <label for="football">Футбол</label>
+                                </li>
+                                <input class="cb" id="basketball" type="checkbox">
+                                <li class="flaticon-check">
+                                    <label for="basketball">Баскетбол</label>
+                                </li>
+                                <input class="cb" id="volleyball" type="checkbox">
+                                <li class="flaticon-check">
+                                    <label for="volleyball">Волейбол</label>
+                                </li>
+                                <input class="cb" id="cb4" type="checkbox">
+                                <li class="flaticon-check">
+                                    <label for="cb4">Теніс</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="group">
+                    <legend>9. Сайт</legend>
+                    <div class="answers">
+                        <div class="list">
+                            <ul>
+                                <li class="flaticon-check">
+                                    <div class="input-name">
+                                        <input class="input-text" type="url"
+                                               minlength="10" id="url"
+                                               pattern="http(s)?:\/\/(www\.)?[\w\d\-\._]+\.[\w]{1,}\/?"
+                                               placeholder="Якщо у вас є сайт, вставте сюди силку на нього">
                                     </div>
-                                </div>
-                            </section>
+                                </li>
+                            </ul>
+                            <label class="hidden-label" for="url">Приклад: https://www.apple.com,
+                                https://developer.mozilla.org</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="group">
+                    <legend>10. Найкращий тиждень</legend>
+                    <div class="answers">
+                        <div class="list">
+                            <ul>
+                                <li class="flaticon-check">
+                                    <div class="input-name">
+                                        <input class="input-text" type="week" id="week">
+                                    </div>
+                                </li>
+                            </ul>
+                            <label class="hidden-label" for="week">Приклад: 30, 2022р</label>
+
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="group">
+                    <legend>11. Найкращий місяць</legend>
+                    <div class="answers">
+                        <div class="list">
+                            <ul>
+                                <li class="flaticon-check">
+                                    <div class="input-name">
+                                        <input class="input-text" type="month" id="month">
+                                    </div>
+                                </li>
+                            </ul>
+                            <label class="hidden-label" for="month">Приклад: липень 2022</label>
+
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="group">
+                    <legend>12. Найкращий час</legend>
+                    <div class="answers">
+                        <div class="list">
+                            <ul>
+                                <li class="flaticon-check">
+                                    <div class="input-name">
+                                        <input class="input-text" type="time" id="time">
+                                    </div>
+                                </li>
+                            </ul>
+                            <label class="hidden-label" for="time">Приклад: 12:00</label>
+
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="group">
+                    <legend>13. Найкращі дата та час</legend>
+                    <div class="answers">
+                        <div class="list">
+                            <ul>
+                                <li class="flaticon-check">
+                                    <div class="input-name">
+                                        <input class="input-text" type="datetime-local" id="datetime-local">
+                                    </div>
+                                </li>
+                            </ul>
+                            <label class="hidden-label" for="datetime-local">Приклад: 25.07.2022, 12.00</label>
+
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="group">
+                    <legend>14. Фізична підготовка</legend>
+                    <div class="answers">
+                        <div class="list">
+                            <div class="input-name">
+                                <input id="range-bar" type="range" value="10" max="100"
+                                       placeholder="Ваша фіз. підготовка">
+                                <label class="hidden-label" for="range-bar">Установіть повзунок посилаючись на власну
+                                    думку</label>
+
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="group">
+                    <legend>15. Олюблений колір</legend>
+                    <div class="answers">
+                        <div class="list">
+                            <div class="input-name">
+                                <input id="fav-color" type="color" value="#8DDAA2">
+                                <label class="hidden-label" for="range-bar">Натисніть на прямокутник та виберіть
+                                    олюблений колір</label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="group">
+                    <legend>Демонстрація функції пошук</legend>
+                    <div class="answers">
+                        <div class="list">
+                            <ul>
+                                <li class="flaticon-check">
+                                    <div class="input-name">
+                                        <input type="search" placeholder="Введіть що-небудь..." id="site-search"
+                                               name="q">
+                                    </div>
+                                </li>
+                            </ul>
+                            <label class="hidden-label" for="site-search">Даний пошук не є робочим, він представлений,
+                                як демонстрація</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="group">
+                    <legend>Демонстрація метера</legend>
+                    <div class="answers">
+                        <div class="list">
+                            <div class="input-name">
+                                <meter id="meter-bar" min="0" low="50" max="100" value="60"></meter>
+                                <label class="hidden-label" for="meter-bar">Метер бар із значенням 60</label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="group">
+                    <legend>Демонстрація прогрес-бара</legend>
+                    <div class="answers">
+                        <div class="list">
+                            <div class="input-name">
+                                <progress id="progress-bar" value="20" max="100"></progress>
+                                <label class="hidden-label" for="progress-bar">Прогрес бар із значенням 20</label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="submit">
+                    <div class="submit-button">
+                        <div class="input-name">
+                            <input class="input-text" id="submit" type="submit">
+                            <input class="input-text" id="reset" type="reset">
                         </div>
                     </div>
                 </div>
-            </form>
-        </div>
-        <div class="bottom">
-
+            </div>
+        </form>
+    </div>
+    <div class="bottom">
+        <div class="bottom-content">
+            <strong>Powered by <a href="https://github.com/Sengammi" target="_blank"><span class="title">Sengammi</span></a></strong>
+            <div class="footer-social-links">
+                <a id="facebook" href="https://www.facebook.com/profile.php?id=100009627766962" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a id="github" href="https://github.com/Sengammi" title="GitHub" target="_blank"><i class="fa fa-github"></i></a>
+                <a id="steam" href="https://steamcommunity.com/id/Jawbone_Six/" title="Steam" target="_blank"><i class="fa fa-steam"></i></a>
+            </div>
         </div>
     </div>
+</div>
 </body>
 </html>
