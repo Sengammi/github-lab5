@@ -125,7 +125,7 @@
                                     </div>
                                 </li>
                             </ul>
-                            <label class="hidden-label" for="tel">Вам повинно бути більше 18 років</label>
+                            <label class="hidden-label" for="tel">Вам повинно бути більше ніж 18 років</label>
                         </div>
                     </div>
                 </fieldset>
@@ -168,7 +168,7 @@
                     </div>
                 </fieldset>
                 <fieldset class="group">
-                    <legend>7. Про себе</legend>
+                    <legend>9. Про себе</legend>
                     <div class="answers">
                         <div class="list">
                             <ul>
@@ -187,32 +187,7 @@
                     </div>
                 </fieldset>
                 <fieldset class="group">
-                    <legend>8. Найкраще знаєте</legend>
-                    <div class="answers">
-                        <div class="list">
-                            <ul>
-                                <li class="flaticon-check">
-                                    <div class="input-name">
-                                        <input class="input-text" placeholder="Яку мову ви знаєте найкраще?"
-                                               list="language">
-                                        <datalist id="language">
-                                            <option value="HTML/CSS">
-                                            <option value="JS">
-                                            <option value="Python">
-                                            <option value="C++">
-                                            <option value="C#">
-                                        </datalist>
-                                    </div>
-                                </li>
-                            </ul>
-                            <label class="hidden-label" for="language">Виберіть із списка мову, якою ви найкраще
-                                володієте</label>
-
-                        </div>
-                    </div>
-                </fieldset>
-                <fieldset class="group">
-                    <legend>8. Види спорту, які вам подобаються</legend>
+                    <legend>10. Види спорту, які вам подобаються</legend>
                     <div class="answers">
                         <div class="list">
                             <ul>
@@ -237,7 +212,7 @@
                     </div>
                 </fieldset>
                 <fieldset class="group">
-                    <legend>9. Сайт</legend>
+                    <legend>11. Сайт</legend>
                     <div class="answers">
                         <div class="list">
                             <ul>
@@ -246,7 +221,7 @@
                                         <input class="input-text" type="url"
                                                minlength="10" id="url"
                                                pattern="http(s)?:\/\/(www\.)?[\d\w\.-]+\.[\w]{1,}\/?"
-                                               placeholder="Якщо у вас є сайт, вставте сюди силку на нього">
+                                               placeholder="Якщо у вас є сайт, вставте сюди посилання на нього">
                                     </div>
                                 </li>
                             </ul>
@@ -256,7 +231,31 @@
                     </div>
                 </fieldset>
                 <fieldset class="group">
-                    <legend>10. Найкращий тиждень</legend>
+                    <legend>12. Найкраще знаєте</legend>
+                    <div class="answers">
+                        <div class="list">
+                            <ul>
+                                <li class="flaticon-check">
+                                    <div class="input-name">
+                                        <input class="input-text" placeholder="Яку мову ви знаєте найкраще?"
+                                               list="language">
+                                        <datalist id="language">
+                                            <option value="HTML/CSS">
+                                            <option value="JS">
+                                            <option value="Python">
+                                            <option value="C++">
+                                            <option value="C#">
+                                        </datalist>
+                                    </div>
+                                </li>
+                            </ul>
+                            <label class="hidden-label" for="language">Виберіть зі списку мову, якою ви найкраще
+                                володієте</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="group">
+                    <legend>13. Найкращий тиждень</legend>
                     <div class="answers">
                         <div class="list">
                             <ul>
@@ -272,7 +271,7 @@
                     </div>
                 </fieldset>
                 <fieldset class="group">
-                    <legend>11. Найкращий місяць</legend>
+                    <legend>14. Найкращий місяць</legend>
                     <div class="answers">
                         <div class="list">
                             <ul>
@@ -288,7 +287,7 @@
                     </div>
                 </fieldset>
                 <fieldset class="group">
-                    <legend>12. Найкращий час</legend>
+                    <legend>15. Найкращий час</legend>
                     <div class="answers">
                         <div class="list">
                             <ul>
@@ -304,7 +303,7 @@
                     </div>
                 </fieldset>
                 <fieldset class="group">
-                    <legend>13. Найкращі дата та час</legend>
+                    <legend>16. Найкращі дата та час</legend>
                     <div class="answers">
                         <div class="list">
                             <ul>
@@ -320,7 +319,7 @@
                     </div>
                 </fieldset>
                 <fieldset class="group">
-                    <legend>14. Фізична підготовка</legend>
+                    <legend>17. Фізична підготовка</legend>
                     <div class="answers">
                         <div class="list">
                             <div class="input-name">
@@ -334,7 +333,7 @@
                     </div>
                 </fieldset>
                 <fieldset class="group">
-                    <legend>15. Улюблений колір</legend>
+                    <legend>18. Улюблений колір</legend>
                     <div class="answers">
                         <div class="list">
                             <div class="input-name">
@@ -368,7 +367,7 @@
                         <div class="list">
                             <div class="input-name">
                                 <meter id="meter-bar" min="0" low="50" max="100" value="60"></meter>
-                                <label class="hidden-label" for="meter-bar">Метер бар із значенням 60</label>
+                                <label class="hidden-label" for="meter-bar">Метер бар зі значенням 60</label>
                             </div>
                         </div>
                     </div>
@@ -379,7 +378,7 @@
                         <div class="list">
                             <div class="input-name">
                                 <progress id="progress-bar" value="20" max="100"></progress>
-                                <label class="hidden-label" for="progress-bar">Прогрес бар із значенням 20</label>
+                                <label class="hidden-label" for="progress-bar">Прогрес бар зі значенням 20</label>
                             </div>
                         </div>
                     </div>
@@ -399,9 +398,12 @@
         <div class="bottom-content">
             <strong>Powered by <a href="https://github.com/Sengammi" target="_blank"><span class="title">Sengammi</span></a></strong>
             <div class="footer-social-links">
-                <a id="facebook" href="https://www.facebook.com/profile.php?id=100009627766962" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-                <a id="github" href="https://github.com/Sengammi" title="GitHub" target="_blank"><i class="fa fa-github"></i></a>
-                <a id="steam" href="https://steamcommunity.com/id/Jawbone_Six/" title="Steam" target="_blank"><i class="fa fa-steam"></i></a>
+                <a id="facebook" href="https://www.facebook.com/profile.php?id=100009627766962" title="Facebook"
+                   target="_blank"><i class="fa fa-facebook"></i></a>
+                <a id="github" href="https://github.com/Sengammi" title="GitHub" target="_blank"><i
+                        class="fa fa-github"></i></a>
+                <a id="steam" href="https://steamcommunity.com/id/Jawbone_Six/" title="Steam" target="_blank"><i
+                        class="fa fa-steam"></i></a>
             </div>
         </div>
     </div>

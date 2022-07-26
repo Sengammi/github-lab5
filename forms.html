@@ -11,6 +11,12 @@
         <form class="content-form-1">
             <div class="top-border-form-1">
                 <div class="big-border">
+                    <div class="big-circle-for-1">
+                        <div class="div-big-circle-for-1">
+                            <div class="small-circle-for-1">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="top-content-form-1">
@@ -31,7 +37,7 @@
                 <div class="bottom-elements-form-1">
                     <div class="bottom-icons-form-1"></div>
                     <input class="input-elements-form-1" type="tel" required
-                           placeholder="мобільнтй телефон"
+                           placeholder="мобільний телефон"
                            maxlength="13"
                            minlength="10"
                            pattern="(\+38)?0[0-9]{9}">
@@ -44,8 +50,8 @@
 
                 </div>
                 <div class="bottom-elements-form-1">
-                    <div class="bottom-icons-form-1"></div>
-                    <input id="submit-form-1" class="input-elements-form-1" type="submit">
+                    <div id="last-cube-form-1" class="bottom-icons-form-1"></div>
+                    <input id="submit-form-1" class="input-elements-form-1" type="submit" value="Відправити">
 
                 </div>
             </div>
@@ -80,40 +86,42 @@
     </div>
     <br>
     <div class="form-3">
-        <div class="overlie">
-        <div class="content-form-3">
-            <form class="body-form-3">
-                <div class="title-form-3">
-                    <h2 class="title-style-form-3"><span>Реє</span>страція</h2>
-                </div>
-                <div class="log-out-form-3">
-                    <fieldset class="input-elements-form-3">
-                        <legend class="input-name-form-3"><label>Ім'я користувача</label></legend>
-                        <input class="input-form-3" id="login-form-3" required
-                               pattern="([А-Яа-яґҐЁёІіЇїЄє'’ʼ\s-]{1,32})|([A-Za-z]{1,32})">
-                    </fieldset>
-                    <fieldset class="input-elements-form-3">
-                        <legend class="input-name-form-3"><label>Пароль</label></legend>
-                        <input class="input-form-3" id="password-form-3" type="password" required
-                               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
-                    </fieldset>
-                    <div class="remember-me-form-3">
-                        <input id="checkbox-form-3" type="checkbox">
-                        <label for="checkbox-form-3">Запам'ятати мене</label>
+        <div class="overlie-form-3">
+            <div class="content-form-3">
+                <form class="body-form-3">
+                    <div class="title-form-3">
+                        <h2 class="title-style-form-3"><span>Реє</span>страція</h2>
                     </div>
-                </div>
-                <div class="submit-frame-form-3">
-                    <input id="submit-form-3" type="submit" value="Відправити">
-                </div>
-            </form>
-        </div>
+                    <div class="log-out-form-3">
+                        <fieldset class="input-elements-form-3">
+                            <legend class="input-name-form-3"><label for="login-form-3">Ім'я користувача</label></legend>
+                            <input class="input-form-3" id="login-form-3" required
+                                   pattern="([А-Яа-яґҐЁёІіЇїЄє'’ʼ\s-]{1,32})|([A-Za-z]{1,32})">
+                        </fieldset>
+                        <fieldset class="input-elements-form-3">
+                            <legend class="input-name-form-3"><label for="password-form-3">Пароль</label></legend>
+                            <input class="input-form-3" id="password-form-3" type="password" required
+                                   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+                        </fieldset>
+                        <div class="remember-me-form-3">
+                            <input id="checkbox-form-3" type="checkbox">
+                            <label for="checkbox-form-3">Запам'ятати мене</label>
+                        </div>
+                    </div>
+                    <div class="submit-frame-form-3">
+                        <input id="submit-form-3" type="submit" value="Відправити">
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
     <br>
     <div class="form-4">
         <div class="content-form-4">
             <div class="top-content-form-4">
-                <img class="flower-img-form-4" src="https://images.vexels.com/media/users/3/148040/isolated/lists/446dcc7d8ab79d17eeacf8d4fc935fae-rose-flower-sketch-icon.png" alt="flower">
+                <img class="flower-img-form-4"
+                     src="https://images.vexels.com/media/users/3/148040/isolated/lists/446dcc7d8ab79d17eeacf8d4fc935fae-rose-flower-sketch-icon.png"
+                     alt="flower">
                 <h3 class="title-form-3">Вас запрошували?<br>Підтвердіть</h3>
             </div>
             <form class="bottom-content-form-4">
@@ -145,10 +153,37 @@
                 </div>
             </form>
         </div>
+    </div>
     <br>
     <div class="form-5">
-
+        <div class="content-form-5">
+            <form class="body-form-5">
+                <div class="title-background-form-5">
+                    <div class="title-form-5">
+                        <h3 class="title-style-form-5">Вхід на сайт</h3>
+                    </div>
+                </div>
+                <div class="log-out-form-5">
+                    <fieldset class="input-elements-form-5">
+                        <input class="input-form-5" id="email-form-5" required
+                               pattern="[\d\w.]{1,32}@[A-Za-z]{1,32}\.[A-Za-z]{1,32}"
+                               placeholder="⠀">
+                        <label class="input-name-form-5" for="email-form-5">Email</label>
+                    </fieldset>
+                    <fieldset class="input-elements-form-5">
+                        <input class="input-form-5" id="password-form-5" type="password" required
+                               pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
+                               placeholder="⠀">
+                        <label class="input-name-form-5" for="password-form-5">Пароль</label>
+                    </fieldset>
+                </div>
+                <div class="submit-frame-form-3">
+                    <input id="submit-form-5" type="submit" value="Вхід">
+                </div>
+            </form>
+        </div>
     </div>
+</div>
 </div>
 </body>
 </html>
