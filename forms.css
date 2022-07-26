@@ -22,8 +22,8 @@ body{
     border-bottom: none;
 }
 .top-border-form-1{
-    height: 45px;
-    border-bottom: 5px solid #8E8E8E;
+    height: 40px;
+    border-bottom: 3px solid #8E8E8E;
 }
 .big-border{
     height: 40px;
@@ -31,7 +31,7 @@ body{
     display: inline-block;
     width: 100%;
     box-sizing: border-box;
-    border-bottom: 50px solid green;
+    border-bottom: 40px solid green;
     border-image: repeating-linear-gradient(
             -25deg,
             #8E8E8E,
@@ -44,17 +44,17 @@ body{
 .big-circle-for-1{
     position: center;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background-color: #9c8778;
     margin: -5px auto;
     text-align: center;
 
 }
 .div-big-circle-for-1{
-    width: 45%;
-    height: 45%;
-    padding: 27.5%;
+    width: 40%;
+    height: 40%;
+    padding: 30%;
 }
 .small-circle-for-1{
     border-radius: 50%;
@@ -69,7 +69,6 @@ body{
 .top-content-form-1{
     padding-top: 40px;
     border-bottom: 3px #8E8E8E solid;
-    border-top: 3px #8E8E8E solid;
 }
 .input-name-form-1{
     border: none;
@@ -186,8 +185,11 @@ body{
     width: 470px;
     min-height: 300px;
     background-color: #f5e9d9;
-    font-family: 'Inter Regular', sans-serif;
+    font-family: "Times New Roman", sans-serif;
     font-size: 18px;
+}
+.form-2 input{
+    font-family: "Times New Roman", sans-serif;
 }
 .content-form-2{
     min-height: 100px;
@@ -247,7 +249,7 @@ body{
     border: none;
 }
 .input-form-2:valid:not(:focus){
-    border-bottom: dotted gray 6px;
+    border-bottom: dotted #cccccc 4px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
 
@@ -270,8 +272,7 @@ body{
     border: none;
     margin-bottom: 25px;
     font-variant: all-petite-caps;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 22px;
 }
 #submit-form-2:hover{
     background-color: #c42061;
@@ -291,7 +292,7 @@ body{
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: rgba(29, 5, 33, 0.55);
+    background-color: rgba(49, 21, 63, 0.65);
 }
 .content-form-3{
     padding: 50px 50px 60px 50px;
@@ -399,11 +400,16 @@ body{
 }
 .flower-img-form-4{
     height: 100px;
-    margin-top: -35px;
+    margin-top: -55px;
+    position: relative;
+    bottom: -20px;
 }
-.title-form-3{
-    font-weight: 300;
+.title-form-4{
+    font-weight: 100;
     font-size: 24px;
+    font-variant: all-petite-caps;
+    border-bottom: double 3px #e1e1e1;
+    padding-bottom: 20px;
 }
 .question-form-4{
     border: none;
@@ -418,7 +424,6 @@ body{
     height: 30px;
     box-sizing: border-box;
     border: 1px solid #d3d2d2;
-    padding-left: 10px;
     padding-left: 10px;
 }
 .input-form-4:hover{
